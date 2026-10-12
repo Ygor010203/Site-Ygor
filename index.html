@@ -155,6 +155,17 @@
   .card h3 { font-size: 15.5px; font-weight: 600; margin: 0 0 8px; }
   .card p { color: var(--text-dim); font-size: 13.5px; margin: 0; line-height: 1.55; }
 
+  /* portfolio */
+  .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .proj-tag {
+    display: inline-block; font-size: 12px; color: var(--accent); background: var(--accent-soft);
+    border: 1px solid var(--accent-dim); padding: 4px 10px; border-radius: 999px; margin-bottom: 14px;
+  }
+  .card-link {
+    display: inline-flex; margin-top: 14px; color: var(--accent); text-decoration: none; font-size: 13px;
+  }
+  .card-link:hover { text-decoration: underline; }
+
   /* why */
   .why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px 40px; }
   .why-item { display: flex; gap: 16px; }
@@ -223,6 +234,7 @@
   }
   @media (max-width: 560px) {
     .grid { grid-template-columns: 1fr; }
+    .grid-2 { grid-template-columns: 1fr; }
     section.cta-band .wrap { flex-direction: column; align-items: flex-start; }
   }
 </style>
@@ -234,6 +246,7 @@
     <div class="brand mono">ygor<span class="dot">.</span>automações</div>
     <div class="nav-links">
       <a class="section-link" href="#servicos">Serviços</a>
+      <a class="section-link" href="#projetos">Projetos</a>
       <a class="section-link" href="#processo">Como funciona</a>
       <a class="section-link" href="#faq">Perguntas</a>
       <a class="btn btn-ghost" href="https://share.google/i9OGJ2GAogrHA5bBr" target="_blank" rel="noopener">Ver no Google</a>
@@ -311,6 +324,26 @@
         <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
         <h3>Criação de sites</h3>
         <p>Site profissional para o seu negócio aparecer no Google, integrado ao WhatsApp para transformar visita em conversa.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos">
+    <p class="eyebrow">projetos entregues</p>
+    <h2>Alguns exemplos do que já construí</h2>
+    <p class="section-lede">Prova real de automação e desenvolvimento funcionando, não só promessa.</p>
+    <div class="grid-2">
+      <div class="card">
+        <span class="proj-tag mono">site institucional</span>
+        <h3>Site para Barbearia</h3>
+        <p>Site institucional responsivo, com apresentação de serviços, tabela de preços e contato direto pelo WhatsApp. Desenvolvido em HTML, CSS e JavaScript.</p>
+        <a class="card-link mono" href="https://ygor010203.github.io/Site-Barbearia/" target="_blank" rel="noopener">ver o site →</a>
+      </div>
+      <div class="card">
+        <span class="proj-tag mono">automação · sistema</span>
+        <h3>Sistema de Controle de Estoque</h3>
+        <p>Sistema em Python com banco de dados, controle de notas fiscais e automação de importação/exportação de dados com Excel e Pipefy.</p>
+        <a class="card-link mono" href="https://github.com/Ygor010203/Sistema-de-Estoque" target="_blank" rel="noopener">ver no github →</a>
       </div>
     </div>
   </section>
@@ -429,6 +462,7 @@
     <div class="foot-col">
       <h4>navegação</h4>
       <a href="#servicos">Serviços</a>
+      <a href="#projetos">Projetos</a>
       <a href="#processo">Como funciona</a>
       <a href="#faq">Perguntas frequentes</a>
     </div>
